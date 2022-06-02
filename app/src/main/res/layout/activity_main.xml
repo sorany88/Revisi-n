@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.ConsumoApi.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.ConsumoApi.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id usuario"
+        android:translationX="170dp"
+        android:translationY="120dp" />
+
+    <TextView
+        android:id="@+id/fechaI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fecha ingreso firma"
+        android:translationX="140dp"
+        android:translationY="150dp" />
+
+    <TextView
+        android:id="@+id/linkF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="link firma"
+        android:translationX="170dp"
+        android:translationY="180dp" />
+
+    <TextView
+        android:id="@+id/correoU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="correo usuario"
+        android:translationX="155dp"
+        android:translationY="210dp" />
+
+    <Button
+        android:id="@+id/consultarDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consultar"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center" />
+
+    <TextView
+        android:id="@+id/jsonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:translationX="170dp"
+        android:translationY="300dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
